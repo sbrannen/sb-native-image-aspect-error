@@ -15,7 +15,7 @@ public class Controller {
   }
 
   @GetMapping("/hello")
-  String hello() {
-    return "World" + service.getConstant();
+  public String hello() {
+    return "Hello, World " + service.getConstant();
   }
 }
